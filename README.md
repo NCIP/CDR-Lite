@@ -9,7 +9,7 @@ More information can be found here:
 http://biospecimens.cancer.gov/newsevents/news/07172015.asp
 
 The CDR-Lite is a Grails application. To get this standalone version up and running, please follow the steps below. Prerequisites:
-
+Knowlege of Java and Git is assumed.
 Install the latest JDK 7 per instructions for your environment. JDK 8 is not supported at this time.
 
 Install PostgreSQL 9.3
@@ -18,7 +18,7 @@ Install Grails 2.4.4 per instructions for your environment. Later versions of Gr
 
 See here for more Grails installation information: http://grails.org/doc/latest/guide/gettingStarted.html
 
-After cloning from GitHub, open a console window, navigate to the cahubdataservices folder, run the following commands:
+After cloning from GitHub, open a console window, navigate to the cdrlite folder, run the following commands:
 
 0) set JAVA_OPTS=-XX:MaxPermSize=128m -XX:PermSize=512m -Xms1024m -Xmx2048m (This is a generous estimate. Default memory settings are not enough.)
 
