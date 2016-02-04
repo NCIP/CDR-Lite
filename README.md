@@ -9,6 +9,7 @@ More information can be found here:
 http://biospecimens.cancer.gov/newsevents/news/07172015.asp
 
 The CDR-Lite is a Grails application. To get this standalone version up and running, please follow the steps below. Prerequisites:
+
 Knowlege of Java and Git is assumed.
 
 Install the latest JDK 7 per instructions for your environment. JDK 8 is not supported at this time.
