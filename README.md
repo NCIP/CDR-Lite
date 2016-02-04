@@ -26,9 +26,9 @@ After cloning from GitHub, open a console window, navigate to the cdrlite folder
 
 1) grails RunApp
 
-This will download all project plug-ins, resolve dependencies and determine if your environment is set up properly. If all goes well, you should see the following message: Server running. Browse to http://localhost:8080/cahubdataservices
+This will download all project plug-ins, resolve dependencies and determine if your environment is set up properly. If all goes well, you should see the following message: Server running. Browse to http://localhost:8080/cdrlite
 
-2) Open a browser if your choice and enter http://localhost:8080/cahubdataservices
+2) Open a browser if your choice and enter http://localhost:8080/cdrlite
 
 3) You may log in with the following test accounts:
 
