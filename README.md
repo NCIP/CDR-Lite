@@ -20,7 +20,7 @@ Install Grails 2.4.4 per instructions for your environment. Later versions of Gr
 
 See here for more Grails installation information: http://grails.org/doc/latest/guide/gettingStarted.html
 
-After cloning from GitHub, open a console window, navigate to the cdrlite folder, run the following commands:
+After cloning from GitHub, open a console window, navigate to the cdrlite folder and run the following commands:
 
 0) set JAVA_OPTS=-XX:MaxPermSize=128m -XX:PermSize=512m -Xms1024m -Xmx2048m (This is a generous estimate. Default memory settings are not enough.)
 
