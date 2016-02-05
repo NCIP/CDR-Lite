@@ -25,7 +25,7 @@ environments {
                      dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
                      url = "jdbc:postgresql://localhost:5432/cdr"
                      username = "cdr"
-                     password = "admin"
+                     password = "*****"
         }
     }
     test {
@@ -33,7 +33,7 @@ environments {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:postgresql://localhost:5432/cdr"  
             username = "cdr"
-            password = "admin"
+            password = "*****"
 //            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
     }
