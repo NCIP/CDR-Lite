@@ -17,9 +17,13 @@ class BootStrap {
         def dccOrg = new Organization(code: "DCC", name: "Data Coordinating Center").save(failOnError: false, flush: true)
         
 
+        def role_admin=CdrRole.findByAuthority("ROLE_ADMIN")
+        def role_dcc=CdrRole.findByAuthority("ROLE_DCC")
         new nci.bbrb.cdr.authservice.CdrUser(username: 'admin', enabled: true, password: 'admin',organization:Organization.findByCode('DCC'), orgCode:'DCC' ).save(failOnError: false, flush: true)
-     
-        
+        def admin_user=CdrUser.findByUsername("admin")
+        new CdrUserRole(user: admin_user, role: role_admin).save(failOnError: false, flush: true)
+        new CdrUserRole(user: admin_user, role: role_dcc).save(failOnError: false, flush: true)
+        // The below code does not appear to work.
         CdrUserRole.create(nci.bbrb.cdr.authservice.CdrUser.findByUsername('admin'), nci.bbrb.cdr.authservice.CdrRole.findByAuthority('ROLE_ADMIN'), true)
         CdrUserRole.create(nci.bbrb.cdr.authservice.CdrUser.findByUsername('admin'), nci.bbrb.cdr.authservice.CdrRole.findByAuthority('ROLE_DCC'), true)
 
@@ -34,6 +38,7 @@ class BootStrap {
         new AppSetting(code: "NEW_QUERY_TRACKER_DISTRO", name: "NEW_QUERY_TRACKER_DISTRO", value: "see big value", bigValue: "david.tabor@nih.gov").save(failOnError: false, flush: true)
         new AppSetting(code: "APERIO_IMAGE_DISTRO", name: "APERIO_IMAGE_DISTRO", value: "see big value", bigValue: "qili@mail.nih.gov").save(failOnError: false, flush: true)
         new AppSetting(code: "APERIO_URL", name: "APERIO_URL", value: "https://microscopy.vai.org/ViewImage.php?ImageId=").save(failOnError: false, flush: true)
+        new AppSetting(code: "FILE_STORAGE", name: "File Storage", value: "/var/storage/cdrds-filestore", description: "Location for storing files").save(failOnError: false, flush: true)
      
         new AppSetting(code: "TUMOR_STAGE_KIDNEY", name: "TUMOR_STAGE_KIDNEY", value: "see big value", bigValue: "Stage I,Stage II,Stage III,Stage IV,Not Available").save(failOnError: false, flush: true)
         new AppSetting(code: "TUMOR_STAGE_LUNG", name: "TUMOR_STAGE_LUNG", value: "see big value", bigValue: "Occult carcinoma,Stage 0,Stage IA,Stage IB,Stage IIA,Stage IIB,Stage IIIA,Stage IIIB,Stage IV,Not Available").save(failOnError: false, flush: true)

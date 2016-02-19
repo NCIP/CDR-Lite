@@ -1,5 +1,6 @@
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 
+
 // The ACCEPT header will not be used for content negotiation for user agents containing the following strings (defaults to the 4 major rendering engines)
 grails.mime.disable.accept.header.userAgents = ['Gecko', 'WebKit', 'Presto', 'Trident']
 grails.mime.types = [ // the first one is the default format
@@ -166,7 +167,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/organization/**': ['ROLE_DCC'],
     '/organization/edit': ['ROLE_DM', 'ROLE_ADMIN'],
     '/bss/**': ['ROLE_DCC'],
-     '/bss/edit': ['ROLE_DM', 'ROLE_ADMIN'],
+    '/bss/edit': ['ROLE_DM', 'ROLE_ADMIN'],
     '/user/**': ['ROLE_ADMIN'],
     '/role/**': ['ROLE_ADMIN'],
     '/activityType/**':['ROLE_DM', 'ROLE_ADMIN'],
@@ -175,6 +176,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/textSearch/**': ['ROLE_BSS', 'ROLE_DCC'],
     '/textSearch/index_all': ['ROLE_ADMIN'],
     '/query/**': ['ROLE_DCC','ROLE_BSS'],
+    '/deviation/**': ['ROLE_DCC','ROLE_ADMIN','ROLE_DM'],
     '/fileUpload/**': ['ROLE_BSS', 'ROLE_DCC'],
     '/caseAttachmentType/**':['ROLE_ADMIN', 'ROLE_DM'],
     '/prcReport/**': ['ROLE_PRC','ROLE_ADMIN'],
