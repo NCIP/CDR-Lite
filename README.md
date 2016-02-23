@@ -16,6 +16,9 @@ Install the latest JDK 7 per instructions for your environment. JDK 8 is not sup
 
 Install PostgreSQL 9.3
 
+Create a database called cdr.  Create a user and password. By default, the cdrlite will try to connect to the database as “cdr/admin.”  The cdr user will not need any special privileges. Through hibernate, it will create tables and sequences only.
+The database, user and password you create will need to be synchronized with DataSource.groovy which can be found in the conf folder under grails-app.
+
 Install Grails 2.4.4 per instructions for your environment. Later versions of Grails are not supported at this time.
 
 See here for more Grails installation information: http://grails.org/doc/latest/guide/gettingStarted.html
