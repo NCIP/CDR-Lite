@@ -36,7 +36,7 @@ class backofficeController {
                 logFile = logDirectory + '/catalina.out' 
                 file = new File(logFile)
             }
-            if ((!file.exists())||(!file.isFile())) message = "Log file has not been generated yet."
+            if ((!file.exists())||(!file.isFile())) message = "Log file has not been generated yet. This only applies if you are running under tomcat. It will not work locally."
             else if (!file.getText()) message = "Log file reading failure." 
             else if (file.getText().trim().equals("")) message = "Log file is empty."
 

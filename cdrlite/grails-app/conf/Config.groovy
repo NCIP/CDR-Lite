@@ -176,7 +176,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/textSearch/**': ['ROLE_BSS', 'ROLE_DCC'],
     '/textSearch/index_all': ['ROLE_ADMIN'],
     '/query/**': ['ROLE_DCC','ROLE_BSS'],
-    '/deviation/**': ['ROLE_DCC','ROLE_ADMIN','ROLE_DM'],
+    '/deviation/**': ['ROLE_DCC','ROLE_ADMIN','ROLE_DM','ROLE_BSS'],
     '/fileUpload/**': ['ROLE_BSS', 'ROLE_DCC'],
     '/caseAttachmentType/**':['ROLE_ADMIN', 'ROLE_DM'],
     '/prcReport/**': ['ROLE_PRC','ROLE_ADMIN'],

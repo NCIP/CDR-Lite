@@ -475,27 +475,16 @@ class DeviationController {
             errorMap.put('nonConformance', 'Please select an option for \"Non conformance issued?\"')
         }
         
-        if (deviationInstance.planned == 'No' && !deviationInstance.jiraId ) {
-            errorMap.put('jiraId', 'Please enter JIRA ID(s)\"')
-        }
-        // if (deviationInstance.planned == 'No' && !deviationInstance.jiraCloseDate) {
-        //   errorMap.put('jiraCloseDate', 'Please enter JIRA close date\"')
-        // }
         if (deviationInstance.nonConformance == 'Yes' && !deviationInstance.nonConformCapaNum) {
             errorMap.put('nonConformCapaNum', 'Please enter Non Conformance CAPPA Number')
         }
-        //if (deviationInstance.nonConformance == 'Yes' && !deviationInstance.capaCloseDate ) {
-        //     errorMap.put('capaCloseDate', 'Please enter Non Conformance CAPPA close date')
-        // }
         if (deviationInstance.type != 'Minor' && deviationInstance.type != 'Major' && deviationInstance.type != 'Critical') {
             errorMap.put('type', 'Please select an option for \"Type\"')
         }
         if (!deviationInstance.dateDeviation) {
             errorMap.put('dateDeviation', 'Please select the \"Date of Deviation\"')
         }
-        //if (deviationInstance.jiraId && !deviationInstance.jiraCloseDate) {
-        //   errorMap.put('jiraCloseDate', 'Please enter date all JIRA Issue(s) Closed')
-        // }
+        
         
         return errorMap
     }
