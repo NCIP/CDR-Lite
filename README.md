@@ -1,3 +1,12 @@
+# NIH Public Archive Repository Disclosure
+
+> The following disclosure is placed here as a mandatory directive from NIH/HHS.  
+> The repository owners may place additional disclosures below this section.
+
+* This repository has been archived and is no longer maintained.
+* The code is provided for historical reference and may contain unpatched or unknown vulnerabilities.
+* It should not be used in production systems.
+
 # CDR-Lite
 
 The National Cancer Institute’s (NCI) Comprehensive Data Resource (CDR) is a distributed web-based system that manages and maintains multi-dimensional data models on biospecimens. The CDR was developed and is currently utilized to collect biospecimen annotation and clinical data on biospecimens collected from cancer patient donors and post-mortem donors, for the NCI’s Biospecimen Pre-analytical Variables (BPV) and NIH Genotype-tissue Expression (GTEx) programs.
